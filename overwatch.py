@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from bs4 import BeautifulSoup
 import requests
-import re
 import itertools 
 
 urls = ["https://overwatch.blizzard.com/en-us/career/takaharimi-1252/",

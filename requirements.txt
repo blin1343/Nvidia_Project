@@ -5,5 +5,4 @@ altair
 overwatch
 bs4
 requests
-re
 itertools
