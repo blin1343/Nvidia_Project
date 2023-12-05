@@ -29,6 +29,7 @@ if __name__ == '__main__':
         st.text_area(
             "***Notes & Assumptions***",
             "* Data is scraped from Blizzard's offical OW2 career profile page\n"
+            "* Data only includes blin1343 & takaharimi profiles\n"
             "* Data will not include player's with profiles set to private\n"
             "\n"
             "Metric Defintions:\n"
@@ -64,9 +65,9 @@ if __name__ == '__main__':
             st.warning("Please select a hero(s) to get started.")
         else:
             col1, col2, col3 = st.columns(3)
-            col1.metric("Eliminations - Avg per 10 Min ", round(elims, 2))
-            col2.metric("Healing Done - Avg per 10 Min", round(healing, 2))
-            col3.metric("Deaths - Avg per 10 Min", round(deaths, 2))
+            col1.metric(f"{role_filter} Eliminations - Avg per 10 Min", round(elims, 2))
+            col2.metric(f"{role_filter} Healing Done - Avg per 10 Min", round(healing, 2))
+            col3.metric(f"{role_filter} Deaths - Avg per 10 Min", round(deaths, 2))
             
             st.markdown("---")
 
