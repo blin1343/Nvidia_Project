@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+altair
+overwatch
+bs4
+requests
+re
+itertools
