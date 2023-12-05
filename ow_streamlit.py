@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-from streamlit_dynamic_filters import DynamicFilters
 import altair as alt
 import overwatch
  
@@ -89,6 +88,5 @@ if __name__ == '__main__':
                 
             st.altair_chart(chart, theme="streamlit") 
 
-
     with tab2:
-        st.dataframe(ow_data, use_container_width=True)
+         st.dataframe(ow_data, use_container_width=True)
