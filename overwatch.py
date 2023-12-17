@@ -47,7 +47,8 @@ ow_data = ow_data[ow_data["metric"].isin(["All Damage Done - Avg per 10 Min",
                                           "Healing Done - Avg per 10 Min"])]
 
 # Converts value to a float
-ow_data['value'] = ow_data['value'].astype('float')
+ow_data['value'] = ow_data['value'].apply(lambda x: float(x.replace(',', '')))
+
 
 # Adds a new column for the role a character falls into. (could not get this data from th career profile apge)
 def get_overwatch_role(character):
